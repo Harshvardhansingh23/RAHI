@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="flex flex-col md:flex-row h-screen">
+
+        <!-- Sidebar -->
+        <aside class="bg-yellow-500 text-white w-full md:w-64 flex-shrink-0">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold">Rahi App</h1>
+                <!-- <p class="text-sm mt-2">Dashboard - Rahi</p> -->
+            </div>
+
+            <nav class="mt-6">
+                <!-- <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Dashboard</a> -->
+                <a href="Home.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Home</a>
+                <a href="profile.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Profile</a>
+                <a href="settings.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Settings</a>
+                <a href="aboutus.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">About us</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Contact</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4">
+            <div class="mb-8">
+                <form class="flex flex-col items-center md:flex-row justify-center space-y-4 md:space-x-4 md:space-y-0">
+                    <!-- Source Input -->
+                    <div class="flex-1">
+                        <label for="source" class="block text-sm font-medium leading-6 text-gray-700">Source</label>
+                        <input id="source" name="source" type="text" placeholder="Enter source"
+                            class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 focus:border-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600 bg-white pl-3" list="sourceOptions">
+                        <datalist id="sourceOptions">
+                            <option value="Airport">
+                            <option value="Bus Station">
+                            <option value="Train Station">
+                            <option value="Hotel">
+                            <option value="Mall">
+                        </datalist>
+                    </div>
+
+                    <!-- Destination Input -->
+                    <div class="flex-1 mt-4 md:mt-0">
+                        <label for="destination" class="block text-sm font-medium leading-6 text-gray-700">Destination</label>
+                        <input id="destination" name="destination" type="text" placeholder="Enter destination"
+                            class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 focus:border-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600 bg-white pl-3 " list="destinationOptions">
+                        <datalist id="destinationOptions">
+                            <option value="Airport">
+                            <option value="Bus Station">
+                            <option value="Train Station">
+                            <option value="Hotel">
+                            <option value="Mall">
+                        </datalist>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="mt-4 flex justify-center md:justify-start w-full md:w-auto">
+                        <button type="submit"
+                            class="bg-yellow-600 text-white rounded-md px-6 h-12 text-sm font-semibold hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-600">Search</button>
+                    </div>
+                </form>
+            </div>
+            <main class="flex-1 p-4 bg-cover" style="background-image: url('https://dialogochino.net/content/uploads/2018/04/BRT2-2.jpg');">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 bg-white bg-opacity-70 rounded-lg p-6">
+                    <!-- Train Option -->
+                    <div class="rounded-lg shadow-lg p-6 flex flex-col items-center justify-center bg-white bg-opacity-90">
+                        <img src="https://image.flaticon.com/icons/png/512/63/63949.png" alt="Train" class="h-16 mb-4">
+                        <h3 class="text-lg font-semibold text-yellow-600 mb-2">Train</h3>
+                        <a href="Home.html" class="text-gray-700 text-center">Routes of train</a>
+                    </div>
+            
+                    <!-- Bus Option -->
+                    <div class="rounded-lg shadow-lg p-6 flex flex-col items-center justify-center bg-white bg-opacity-90">
+                        <img src="https://image.flaticon.com/icons/png/512/636/636416.png" alt="Bus" class="h-16 mb-4">
+                        <h3 class="text-lg font-semibold text-yellow-600 mb-2">Bus</h3>
+                        <a href="Home.html" class="text-gray-700 text-center">Routes of bus</a>
+                    </div>
+            
+                    <!-- Flight Option -->
+                    <div class="rounded-lg shadow-lg p-6 flex flex-col items-center justify-center bg-white bg-opacity-90">
+                        <img src="https://image.flaticon.com/icons/png/512/64/64575.png" alt="Flight" class="h-16 mb-4">
+                        <h3 class="text-lg font-semibold text-yellow-600 mb-2">Flight</h3>
+                        <a href="Home.html" class="text-gray-700 text-center">Routes of flight</a>
+                    </div>
+            
+                    <!-- Metro Option -->
+                    <div class="rounded-lg shadow-lg p-6 flex flex-col items-center justify-center bg-white bg-opacity-90">
+                        <img src="https://image.flaticon.com/icons/png/512/1017/1017841.png" alt="Metro" class="h-16 mb-4">
+                        <h3 class="text-lg font-semibold text-yellow-600 mb-2">Metro</h3>
+                        <a href="Home.html" class="text-gray-700 text-center">Routes of metro</a>
+                    </div>
+            
+                    <!-- Cab Option -->
+                    <div class="rounded-lg shadow-lg p-6 flex flex-col items-center justify-center bg-white bg-opacity-90">
+                        <img src="https://image.flaticon.com/icons/png/512/3084/3084543.png" alt="Cab" class="h-16 mb-4">
+                        <h3 class="text-lg font-semibold text-yellow-600 mb-2">Cab</h3>
+                        <a href="Home.html" class="text-gray-700 text-center">Routes of cab</a>
+                    </div>
+                </div>
+            
+                <!-- You can add more route and offer cards here -->
+            
+            </main>
+            <!-- Available Routes and Offers -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Available Routes and Offers</h2>
+
+                <!-- Route Card -->
+                <div class="border-b border-gray-200 pb-4 mb-4">
+                    <h3 class="text-lg font-semibold text-yellow-600 mb-2">Route 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet
+                        fermentum urna. Sed lacinia ultricies massa nec feugiat.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-gray-500">Price: $20</span>
+                        <button
+                            class="text-yellow-600 hover:text-yellow-500 focus:outline-none focus:text-yellow-500">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card -->
+                <div class="border-b border-gray-200 pb-4 mb-4">
+                    <h3 class="text-lg font-semibold text-yellow-600 mb-2">Offer 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet
+                        fermentum urna. Sed lacinia ultricies massa nec feugiat.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-gray-500">Discount: 10%</span>
+                        <button
+                            class="text-yellow-600 hover:text-yellow-500 focus:outline-none focus:text-yellow-500">Avail
+                            Offer</button>
+                    </div>
+                </div>
+
+                <!-- You can add more route and offer cards here -->
+
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Menu 1 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">About Rahi</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Vision</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 2 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Services</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Taxi Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Train Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Flight Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Bus Booking</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 3 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Support</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">FAQs</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 4 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Social</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Facebook</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Twitter</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Instagram</a></li>
+                        <li><a href="#" class="hover:text-orange-500">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

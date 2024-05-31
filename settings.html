@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Settings - Rahi</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="flex flex-col md:flex-row h-screen">
+
+        <!-- Sidebar -->
+        <aside class="bg-yellow-500 text-white w-full md:w-64 flex-shrink-0">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold">Rahi App</h1>
+            </div>
+
+            <nav class="mt-6">
+                <!-- <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Dashboard</a> -->
+                <a href="Home.html" class="block py-2 px-4 text-sm hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Home</a>
+                <a href="profile.html" class="block py-2 px-4 text-sm hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Profile</a>
+                <a href="settings.html" class="block py-2 px-4 text-sm hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Settings</a>
+                <a href="aboutus.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">About us</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Contact</a>
+                <!-- <a href="signin.html" class="block py-2 px-4 text-sm hover:bg-orange-600 focus:outline-none focus:bg-orange-600">Sign Out</a> -->
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Settings</h2>
+
+                <!-- Notification Settings -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Notification Settings</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="emailNotifications" class="block text-sm font-medium leading-6 text-gray-700">
+                                Email Notifications
+                            </label>
+                            <select id="emailNotifications" name="emailNotifications" class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-200 focus:ring-opacity-50">
+                                <option value="1">Enabled</option>
+                                <option value="0">Disabled</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pushNotifications" class="block text-sm font-medium leading-6 text-gray-700">
+                                Push Notifications
+                            </label>
+                            <select id="pushNotifications" name="pushNotifications" class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-200 focus:ring-opacity-50">
+                                <option value="1">Enabled</option>
+                                <option value="0">Disabled</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Settings -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Account Settings</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="changePassword" class="block text-sm font-medium leading-6 text-gray-700">
+                                Change Password
+                            </label>
+                            <button id="changePassword" class="block w-full mt-1 bg-yellow-600 text-white rounded-md px-4 py-2 text-sm font-semibold hover:bg-yellow-500 focus:outline-none focus:ring focus:ring-yellow-200 focus:ring-opacity-50">
+                                Change Password
+                            </button>
+                        </div>
+                        <div>
+                            <label for="deleteAccount" class="block text-sm font-medium leading-6 text-gray-700">
+                                Delete Account
+                            </label>
+                            <button id="deleteAccount" class="block w-full mt-1 bg-red-600 text-white rounded-md px-4 py-2 text-sm font-semibold hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-50">
+                                Delete Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Save Button -->
+                <div class="flex justify-end">
+                    <button type="submit" class="bg-orange-500 text-white rounded-md px-6 h-12 text-sm font-semibold hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                        Save Changes
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Menu 1 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">About Rahi</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Vision</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 2 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Services</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Taxi Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Train Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Flight Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Bus Booking</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 3 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Support</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">FAQs</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 4 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Social</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Facebook</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Twitter</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Instagram</a></li>
+                        <li><a href="#" class="hover:text-orange-500">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>User Profile - Rahi</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="flex flex-col md:flex-row h-screen">
+
+        <!-- Sidebar -->
+        <aside class="bg-yellow-500 text-white w-full md:w-64 flex-shrink-0">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold">Rahi App</h1>
+            </div>
+
+            <nav class="mt-6">
+                <!-- <a href="dashboard.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Dashboard</a> -->
+                <a href="Home.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Home</a>
+                <a href="profile.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Profile</a>
+                <a href="settings.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Settings</a>
+                <a href="aboutus.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">About us</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Contact</a>
+                <a href="signin.html" class="block py-2 px-4 text-sm hover:bg-yellow-700 focus:outline-none focus:bg-yellow-700">Sign Out</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">User Profile</h2>
+
+                <!-- Profile Information -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Profile Image -->
+                    <div class="flex justify-center md:justify-start">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzWkCV0eJTzYZubt9_33kAemfSFFtkccYk7DYUscc0Kg&s" alt="User Profile" class="h-32 w-32 rounded-full">
+                    </div>
+
+                    <!-- Profile Details -->
+                    <div>
+                        <div class="mb-4">
+                            <label for="fullName" class="block text-sm font-medium leading-6 text-gray-700">Full Name</label>
+                            <input id="fullName" name="fullName" type="text" placeholder="Enter full name" value="John Doe"
+                                class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 bg-gray-100 pl-3" readonly>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium leading-6 text-gray-700">Email Address</label>
+                            <input id="email" name="email" type="email" placeholder="Enter email address" value="johndoe@example.com"
+                                class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 bg-gray-100 pl-3" readonly>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="phoneNumber" class="block text-sm font-medium leading-6 text-gray-700">Phone Number</label>
+                            <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="Enter phone number" value="1234567890"
+                                class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 bg-gray-100 pl-3" readonly>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="address" class="block text-sm font-medium leading-6 text-gray-700">Address</label>
+                            <input id="address" name="address" type="text" placeholder="Enter address" value="123 Street, City, Country"
+                                class="block w-full rounded-md border-2 border-gray-300 h-12 px-4 text-gray-700 bg-gray-100 pl-3" readonly>
+                        </div>
+
+                        <div class="mb-4">
+                            <button type="submit"
+                                class="bg-yellow-600 text-white rounded-md px-6 h-12 text-sm font-semibold hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-600">Edit
+                                Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Menu 1 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">About Rahi</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Our Vision</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 2 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Services</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Taxi Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Train Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Flight Booking</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Bus Booking</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 3 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Support</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">FAQs</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Menu 4 -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Social</h4>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-orange-500">Facebook</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Twitter</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Instagram</a></li>
+                        <li><a href="#" class="hover:text-orange-500">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
